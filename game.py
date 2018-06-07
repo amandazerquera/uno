@@ -26,6 +26,8 @@ class Game:
       card.draw_4 = True
       deck.append(card)
     return deck
+   def shuffle_deck(self):
+      return deck.shuffle()
    def deal(self, players):
         self.hands = [self.deck[i::players] for i in range(0, players)]
       
